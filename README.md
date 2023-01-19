@@ -73,6 +73,44 @@ The company needs to create a database that can hold the following tables
 
 ![table 6](https://user-images.githubusercontent.com/106580846/213432703-95e5cfa8-4a20-4a82-9df7-f682078c68fd.png)
 
+## Mission 3: Working with cursors
+
+I need to perform some basic tasks on the database such as setting up the database and checking the names of the tables in the database. Hence, I have established a connection with the MySQL database using Python. 
+
+#### Task 1: Find out what tables currently exist in the database. 
+
+**Step 1:** Set the database little_lemon in use. 
+**Step 2:** Create a cursor object and execute SHOW TABLES to retrieve the names of the tables in the database.
+**Step 3:** Fetch all the names in a variable and use the for loop to print the output.   
+
+![cursor 1](https://user-images.githubusercontent.com/106580846/213447417-05635b20-11ee-4f6b-a122-8b09ca12a33f.png)
+
+#### Task 2: Standard Vs Buffered Cursor
+Run a test between the standard and the buffered cursor to check what type of cursor will work for the situation given below:
+
+Create a cursor
+* Execute USE little_lemon
+* Execute SELECT * FROM Bookings
+* Execute SELECT * FROM Orders
+
+###### Standard Cursor
+
+![cursor 2](https://user-images.githubusercontent.com/106580846/213452130-9c8f3e62-f568-4499-a99e-e6415da95045.png)
+
+###### Buffered Cursor
+
+![cursor 3](https://user-images.githubusercontent.com/106580846/213452202-d8238515-5ac4-4ac3-8a09-66ec642826e1.png)
+
+#### Task 3: Using a Dictionary cursor
+
+Create a cursor with the argument [dictionary = True] and retrieve the names of all the tables in the form of a dictionary object where the name of the tables is a value, and the database name is a key. 
+
+![cursor 5](https://user-images.githubusercontent.com/106580846/213453310-a23fde23-a9ae-4ced-b5bb-50a702018a64.png)
+
+
+
+
+
 
 
 

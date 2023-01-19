@@ -2,7 +2,7 @@
 Come along my journey as I utilize Jupyter Notebook to make use of python programming language to work with a MySQL backend database.
 
 ## Mission 1: Establish a MySQL/Python connection
-
+#### Task 1
 A company is developing a Python-based application that needs to use MySQL in the back end so that they can store day-to-day data 
 Establish a connection between Python and the MySQL server so that they can access and communicate with the database using Python.
 
@@ -15,7 +15,7 @@ Then use the variable to store an instance of the connection made with the datab
 
 ![connector 2](https://user-images.githubusercontent.com/106580846/213402543-54103e29-9762-43df-8923-6639846a27f5.png)
 
-## Mission 2: Using try/except blocks
+#### Task 2: Using try/except blocks
 
 To ensure that there are no connection issues when connecting with MySQL database I use try/except blocks when making the connection
 
@@ -25,7 +25,7 @@ To ensure that there are no connection issues when connecting with MySQL databas
 
 ![connector 3](https://user-images.githubusercontent.com/106580846/213406870-79781113-26d0-4a4c-8d36-d09507d35b62.png)
 
-## Mission 3:Identify connection issues
+#### Task 3: Identify connection issues
 
 To identify the specific reason for any connection issues and display the error code along with the error message in the following situations: 
 * When the database does not exist.
@@ -37,11 +37,11 @@ To identify the specific reason for any connection issues and display the error 
 
 ![connector 4](https://user-images.githubusercontent.com/106580846/213413219-becbf7b2-bf61-4845-8afc-b4e5d8dc2868.png)
 
-## Mission 4: Closing the connection
+#### Task 4: Closing the connection
  
   ![connector 5](https://user-images.githubusercontent.com/106580846/213413397-45f80969-202d-48c2-9fef-8fb7f4c7879c.png)
   
- ## Mission 5: Creating a table structure in a MySQL database using Python
+ ## Mission 2: Creating a table structure in a MySQL database using Python
 
 The company needs to create a database that can hold the following tables
 * A table called Menu that stores menu data 
@@ -50,6 +50,32 @@ The company needs to create a database that can hold the following tables
 *	A table called Bookings that stores data on customer bookings 
 
 **Step 1:** Create the database to hold the tables call it "little_lemon".
+
+![table 1](https://user-images.githubusercontent.com/106580846/213430948-57ee56de-7dfe-4e86-a2c8-de5791712ad5.png)
+
+**Step 2:** Set the newly created database little_lemon for use and confirm that the database is available for use by using connection.database. 
+
+![table 0](https://user-images.githubusercontent.com/106580846/213431060-2c74efa3-f926-4eb6-bc0e-adc80c35288b.png)
+
+**Step 2:** Create a MenuItems table and use the command “show tables” to confirm that the table has been created.
+
+![table 2](https://user-images.githubusercontent.com/106580846/213431872-f1bff736-95d7-4251-9721-7abdb2843e4a.png)
+
+**Step 3:** Create a Menus table and use the command “show tables” to confirm that the table has been created.
+
+![table 4](https://user-images.githubusercontent.com/106580846/213432228-77719e9f-1b03-41dd-931a-3bfdb36a3251.png)
+
+**Step 4:** Create a Bookings table and use the command “show tables” to confirm that the table has been created.
+
+![table 5](https://user-images.githubusercontent.com/106580846/213432374-425491d7-bbf6-4dc6-83f4-4169beab156f.png)
+
+**Step 5:** Create an Orders table and use the command “show tables” to confirm that the table has been created.
+
+![table 6](https://user-images.githubusercontent.com/106580846/213432703-95e5cfa8-4a20-4a82-9df7-f682078c68fd.png)
+
+
+
+
 
  
 

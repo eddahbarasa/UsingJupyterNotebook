@@ -174,6 +174,28 @@ to retrieve the rest of the records..........
 ###### Method 2: Setting a limit of 3 in the sql query
 ![image](https://user-images.githubusercontent.com/106580846/214828795-0e3d37e5-4e27-4983-a29b-b588aabce22a.png)
 
+## Mission 5: Updating and deleting records in a MySQL database using Python
+
+Update the records of customers in the database and delete records related to menu items. 
+
+#### Task 1: Updating one column a guest’s Bookings Record
+Change the guest Diana Pinto’s booking to table 10 in the MySQL database using an SQL UPDATE statement in Python.
+
+![crud 1](https://user-images.githubusercontent.com/106580846/214831603-2c4e8ac2-b8e4-4db9-b7d7-dc33dc1a68fb.png)
+
+#### Task 3: Updating two columns in guest’s Bookings record
+There has been a conflict with two bookings. To resolve the conflict, you need to update the record for the guest Joakim Iversen.
+Update Joakim’s booking in the MySQL database using Python as follows:
+*	Change the guest’s table number to 11.
+*	Change the EmployeeID of the guest’s waiter to 6.
+
+![crud 2](https://user-images.githubusercontent.com/106580846/214831799-55796ecb-1991-4bc1-8dd2-fd3a92c80e5f.png)
+
+#### Task 4: Deleting a record
+
+The restaurant didn’t receive their regular supply of ingredients today. This means that they can’t provide any Greek cuisine for their guests. They need to delete all Greek cuisine from their menu until the supply of ingredients is restored. 
+![crud 3](https://user-images.githubusercontent.com/106580846/214831905-b7408995-4e23-420b-844f-32ef6471245d.png)
+
 
 
 

@@ -223,7 +223,36 @@ A guest wants to know the price of today’s starters and desserts. Create a que
 
 ![sorting 3](https://user-images.githubusercontent.com/106580846/214839653-727e9ba1-94e5-45b7-9547-c97530df57be.png)
 
-## Mission 7: Performing different JOIN operations in MySQL databases using Python
+## Mission 7: Performing JOIN operations in MySQL databases using Python
+
+The restaurant needs to carry out the following tasks with their datasets:
+*	Determine the final bill amount for each customer who attended the restaurant today 
+*	Identify the type of cuisine that each item in their menu belongs to
+
+#### Task 1: Performing inner join
+The restaurant needs the following information for each of the items on their menu:
+* The name of each item in the menu
+*	Each menu item’s type
+*	Each menu item’s cuisine
+*	The price of each item in the menu
+
+![join 1](https://user-images.githubusercontent.com/106580846/214841058-7dfa9468-2b1d-4fe8-aa40-98c8f2cb98b4.png)
+
+#### Task 2: Performing a left join
+The restaurant noticed that there are several menu items in the MenuItems records that are absent from the Menus table. Identify the items that are present in the MenuItems records but absent from the Menus table by using a LEFT JOIN operation on the MenuItems table.
+
+![join 2](https://user-images.githubusercontent.com/106580846/214841395-3bf71ac2-2b8c-459a-99ff-6002747edc03.png)
+
+#### Task 3: Performing inner join
+The restaurant needs to retrieve the following information from the Bookings and the Orders tables in their MySQL database using Python:
+*	Booking ID
+*	Table number
+*	Guest first name
+* Bill amount
+
+![join 3](https://user-images.githubusercontent.com/106580846/214841898-efb99426-b73c-4511-8392-33b029932305.png)
+
+
 
 
 

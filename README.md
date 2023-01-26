@@ -107,19 +107,72 @@ Create a cursor with the argument [dictionary = True] and retrieve the names of 
 
 ![cursor 5](https://user-images.githubusercontent.com/106580846/213453310-a23fde23-a9ae-4ced-b5bb-50a702018a64.png)
 
+## Mission 4: Creating and reading records in a MySQL database using Python
 
+The tables created in the database are:
+* A table called Menu that stores menu data
+*	A table called MenuItems that stores data on menu items
+*	A table called Orders that stores data on customer orders 
+*	A table called Bookings that stores data on customer bookings
 
+I now need to populate these tables with relevant data and read the data once the records have been inserted into the database.
 
+#### Task 1: Insert and read the data in all the tables
+Insert data in all four tables in the little_lemon database using Python
+Use the SELECT query to check the output and ensure that each insert query has been executed 
 
+###### Inserting data into Bookings table
 
+![image](https://user-images.githubusercontent.com/106580846/214827516-0c25438b-c507-4f15-b9ee-a326ba7cd2ae.png)
 
+###### Viewing data in Bookings table
 
+![image](https://user-images.githubusercontent.com/106580846/214827701-38011b13-c4e8-42ca-9aae-f8e576b1da24.png)
 
- 
+###### Inserting data into MenuItems table
+![image](https://user-images.githubusercontent.com/106580846/214827802-fbfe5cff-94c2-4d65-a99d-ea86e9d738b4.png)
+![image](https://user-images.githubusercontent.com/106580846/214827837-241e7e6b-7720-4b90-aa7e-9ff6e0bc13ea.png)
 
+###### Viewing data from MenuItems table
+![image](https://user-images.githubusercontent.com/106580846/214827949-8ce3a9c2-8cc0-4c2e-b2d8-78d6e8220e3a.png)
+![image](https://user-images.githubusercontent.com/106580846/214827964-05b22e8c-1aa6-4226-b4a8-a7841924cc6d.png)
 
+###### Inserting data into Menus table
+![image](https://user-images.githubusercontent.com/106580846/214828038-99542c8d-477c-49d8-9423-2c68dc7f45f7.png)
 
+###### Viewing data in Menus table
+![image](https://user-images.githubusercontent.com/106580846/214828143-f07bded4-ec66-4d10-9b9c-402cce603a36.png)
+![image](https://user-images.githubusercontent.com/106580846/214828160-f6bb2ae0-753a-4f69-aff2-c71ed6a436e0.png)
 
+###### Inserting data into Orders table
+![image](https://user-images.githubusercontent.com/106580846/214828250-e01a4e1d-d706-4f5e-bc86-b0b746706a8e.png)
+
+###### Viewing data in Orders table 
+![image](https://user-images.githubusercontent.com/106580846/214828291-9d387682-9686-43ae-a03b-a4465cf63278.png)
+
+#### Task 2: Retrieving records
+
+Retrieve the following data for each guest:
+*	Guest first and last names.
+*	The table number assigned to each guest.
+Use a for loop to iterate over the results that you fetch using the cursor
+
+![image](https://user-images.githubusercontent.com/106580846/214828490-4256a818-2559-49d7-a72e-d0a9de547313.png)
+
+#### Task 3: Retrieving the first 3 records only
+The  queries are returning large volumes of data. I need to find a way to return the data in smaller, more manageable chunks. 
+Return just the first three items from the menu. 
+
+###### Method 1: Using fetchmany()
+
+![image](https://user-images.githubusercontent.com/106580846/214828657-f641892b-e2c4-4bc0-a8d8-4b0d11fceba4.png)
+
+to retrieve the rest of the records..........
+
+![image](https://user-images.githubusercontent.com/106580846/214828693-c2c2f553-5dfb-4df8-a4eb-b47aecee05f8.png)
+
+###### Method 2: Setting a limit of 3 in the sql query
+![image](https://user-images.githubusercontent.com/106580846/214828795-0e3d37e5-4e27-4983-a29b-b588aabce22a.png)
 
 
 

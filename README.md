@@ -210,18 +210,18 @@ The output should include:
 *	GuestFirstName
 *	GuestLastName
 *	EmployeeID
-
-![sorting 1](https://user-images.githubusercontent.com/106580846/214836637-e3b540bb-0087-4cd8-b409-e55a41066964.png)
+*	
+![sorting 1](https://user-images.githubusercontent.com/106580846/214839482-0a08e4e2-8e51-4648-85f4-dfb364bca07f.png)
 
 #### Task 2: Filtering & sorting
 We want to send a coupon to all guests who spent more than $40 at the restaurant today. Filter and sort the records of all guests who qualify for the coupons.
 
-![sorting 2](https://user-images.githubusercontent.com/106580846/214836886-5c2e17e8-08e3-44e7-b28a-b4651f984b7a.png)
+![sorting 2](https://user-images.githubusercontent.com/106580846/214839580-e9589bba-e9d6-487d-a9e9-7b4880149823.png)
 
 #### Task 3: filtering & sorting
 A guest wants to know the price of today’s starters and desserts. Create a query that extracts the prices and details of starters and dessert options only from the MenuItems table. Order these prices from lower to higher.
 
-![sorting 3](https://user-images.githubusercontent.com/106580846/214837123-3d54d2e1-5208-4f13-ae64-e03fd9247a01.png)
+![sorting 3](https://user-images.githubusercontent.com/106580846/214839653-727e9ba1-94e5-45b7-9547-c97530df57be.png)
 
 ## Mission 7: Performing different JOIN operations in MySQL databases using Python
 

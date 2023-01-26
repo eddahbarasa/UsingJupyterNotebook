@@ -196,7 +196,7 @@ Update Joakim’s booking in the MySQL database using Python as follows:
 The restaurant didn’t receive their regular supply of ingredients today. This means that they can’t provide any Greek cuisine for their guests. They need to delete all Greek cuisine from their menu until the supply of ingredients is restored. 
 ![crud 3](https://user-images.githubusercontent.com/106580846/214831905-b7408995-4e23-420b-844f-32ef6471245d.png)
 
-
+## Mission 6: Filtering and sorting data in a MySQL database using Python
 
 
 

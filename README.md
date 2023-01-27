@@ -325,5 +325,58 @@ A guest with booking ID 2 and table number 12 wants to change their arrival time
 
 ![datetime 3](https://user-images.githubusercontent.com/106580846/215058220-3bfa6777-d103-442c-9910-6255ff984229.png)
 
+## Mission 10: Stored procedures using python
+
+The restaurant needs to perform some tasks on daily basis, and they involve extracting data from one or more tables. 
+
+The tasks include:
+*	Finding the guest with maximum spending, 
+*	Retrieving the bookings for no arrival, 
+*	Displaying the order status to the guests. 
+
+To keep consistency during the data retrieval process, the restaurant  wants to implement the required tasks using stored procedures. 
+
+#### Task 1:
+
+We are running a marketing campaign this month. We need to issue a discount coupon to the top spender on daily basis. Create a stored procedure TopSpender that can retrieve the following, the booking ID, guest’s full name, and the bill amount of the top spender at closing. Call the procedure and print the results. 
+###### Steps:
+*	Target BookingID, GuestFirstName, GuestLastName and BillAmount columns from the Bookings and the Orders tables. 
+*	Use the concatenation function to get the guest’s full name. 
+*	Join the two tables and retrieve the top spender. 
+*	Create a stored procedure
+*	Call it by its name using python and print the results.
+
+![proc 1](https://user-images.githubusercontent.com/106580846/215060851-793c65cf-fd5e-4ec8-ba07-094c52edc623.png)
+
+#### Task 2:
+Retrieve all those bookings where the guests did not appear today. Use NoArrival as a name for your stored procedure. 
+
+###### Steps:
+*	Target the Orders and the Bookings tables
+*	Join them on BookingID and retrieve the records with a NULL value in the bill amount. 
+*	Create a stored procedure, 
+*	Call it by its name using Python and print the results.  
+
+![proc 2](https://user-images.githubusercontent.com/106580846/215061142-3ce49115-832e-4f02-b6a7-027346026830.png)
+
+#### Task 3:
+It is very important for the restaurant to keep track of the status of each guest’s order and display it on the screen to keep their guests informed. 
+This is how they categorize the orders:
+
+*If not assigned to any employee, the status is In Queue*
+
+*If assigned to the employees with IDs 4 and 5, the status is Preparing Order*
+
+*If assigned to the employees with IDs 1, 2, and 3, the status is Order Served*
+
+Create a stored procedure named OrderStatus for the above task and call the procedure.
+
+##### Steps:
+*	Target EmployeeID column in the Bookings table
+*	Use the CASE function in your stored procedure query
+*	Create a stored procedure 
+*	Call it by its name using python and print the results.
+
+![proc 3](https://user-images.githubusercontent.com/106580846/215061709-e7c6e583-65e5-4e0c-ae25-4797af300c36.png)![proc 3 results](https://user-images.githubusercontent.com/106580846/215061751-2ccb255c-4c5a-4a90-88db-a6472b6c1bac.png)
 
 

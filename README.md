@@ -252,7 +252,41 @@ The restaurant needs to retrieve the following information from the Bookings and
 
 ![join 3](https://user-images.githubusercontent.com/106580846/214841898-efb99426-b73c-4511-8392-33b029932305.png)
 
+## Mission 8: Utilizing MySQL functions with Python
 
+There are several occasions where the restaurant needs to perform routine operations, some of them include total sales, the total number of guests, the number of items in each cuisine, the full name of the guests, and so on. 
+
+#### Task 1:
+
+Along with the booking ID, little lemon needs to add the full name of the guests in upper case on their invoices. Help little lemon to extract the data in the required format.
+
+![function 1](https://user-images.githubusercontent.com/106580846/215055520-e5da3e24-0737-4ad8-b0d4-0903c20da8f6.png)
+
+#### Task 2:
+Little lemon needs to know the following statistics at closing:
+*	Number of bookings
+*	Total sale
+*	Average sale
+
+![todays](https://user-images.githubusercontent.com/106580846/215055944-e47ac8e5-7f76-4948-90a9-7c80caae7793.png)
+
+#### Task 3:
+
+Little lemon needs to know the number of bookings for each table. Print the table number and the number of bookings for each table. 
+
+![function 3](https://user-images.githubusercontent.com/106580846/215056090-76462cca-1ac5-4b26-81b8-796462e1fcc8.png)
+
+#### Task 4:
+
+Little lemon wants to create three arrival slots for the guests based on the booking hour:
+*	Late afternoon: for hours 15 and 16 
+*	Evening: for hours 17 and 18
+*	Night: for hours 19 and 20
+
+Display the booking ID, guest name, and arrival slot on the kitchen screen so that the staff can plan accordingly. 
+Target GuestFirstName and GuestLastName columns and combine them to get Guest_Name. Use the MySQL CASE function and create Arrival_slot for each guest
+
+![functions 4](https://user-images.githubusercontent.com/106580846/215056215-d29348ed-a6c7-4972-a1ef-d84f1828d747.png)
 
 
 

@@ -379,4 +379,43 @@ Create a stored procedure named OrderStatus for the above task and call the proc
 
 ![proc 3](https://user-images.githubusercontent.com/106580846/215061709-e7c6e583-65e5-4e0c-ae25-4797af300c36.png)![proc 3 results](https://user-images.githubusercontent.com/106580846/215061751-2ccb255c-4c5a-4a90-88db-a6472b6c1bac.png)
 
+## Mission 11: Working with connection pools
 
+The restauranat's guests need to access the database for any booking or inquiry, for example, reading the menu. We, therefore, need to establish a connection between the Python and MySQL databases for every operation.  
+
+Establishing a connection every time is resource intensive and it is affecting the performance of the application. To improve the performance of the application, we need to establish a pool of database connections to facilitate the guests’ inquiries to the database.
+
+#### Task 1:
+Create a database connection pool with three connections available for the users to connect to the database with. Import MySQLConnectionPool class and pass the following arguments:
+* pool_name = “ll_pool_a”
+* pool_size = 3
+*	**dbconfig
+
+###### Steps:
+*	Use the actual name of the database together with authenticated username and password in the above configuration. 
+*	Use the Error class from mysql.connector to handle a possible error in an instance where the wrong parameters are passed on the database configuration.
+* Use try-except block from Python to implement the error handling. 
+* Once the connection pool is created, use the print statements to display the name of the pool and the number of connections in it. 
+
+![connection 1](https://user-images.githubusercontent.com/106580846/215071463-63166e6d-558f-4338-b340-9203a7488365.png)
+
+#### Task 2:
+Get a connection from the database connection pool that you have created in the first task and retrieve the following columns from the Bookings table:
+BookingID GuestFirstName GuestLastName
+
+Retrieve the required columns and put the connection back into the pool after you have completed the task.
+
+![connection 2 a](https://user-images.githubusercontent.com/106580846/215071646-c32f6b8a-4b4a-4e27-9dbd-cb7e23cf16a5.png)![connection 2 b](https://user-images.githubusercontent.com/106580846/215071670-133745ea-d6dd-4b07-99bb-1624497d66db.png)![connection 2 c](https://user-images.githubusercontent.com/106580846/215071714-aa2dba1d-4c33-4ac8-873a-d40c174bac2b.png)
+
+#### Task 3:
+The following five guests want to connect to the database:
+
+guests = ["Anna", "Marcos", "Diana", "Joakim", "Hiroki"]
+
+You only have three connections in the database connection pool. 
+Use the available connection in the pool to connect three guests and then add new connections to the pool to connect the two remaining guests. 
+
+Ensure that all five guests are connected to the database at the same time, by adding more connections to the pool. Use add_connection module from the pool and add a new connection if all existing connections are in use. Use try-except from Python and print the message to inform the user when connected
+
+![connection 3 a](https://user-images.githubusercontent.com/106580846/215072078-f9727741-b1a8-4d29-ba7f-2fa7b0250971.png)
+![connection 3 b](https://user-images.githubusercontent.com/106580846/215072095-848ca45d-c131-42fc-81ec-d044d0bbd6af.png)

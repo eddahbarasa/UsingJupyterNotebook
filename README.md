@@ -288,8 +288,42 @@ Target GuestFirstName and GuestLastName columns and combine them to get Guest_Na
 
 ![functions 4](https://user-images.githubusercontent.com/106580846/215056215-d29348ed-a6c7-4972-a1ef-d84f1828d747.png)
 
+## Mission 9: Working with date and time functions in Python
 
+The restaurant needs to schedule its staff’s duties according to the restaurant’s peak hours. They also want to display the guest’s name and their expected arrival time on the kitchen screen to keep the staff informed. These and several other similar tasks, such as changing the booking time, require working with the date and time column. 
 
+#### Task 1:
+Retrieve the number of bookings in each hour so that we can schedule staff’s duties accordingly. 
+
+###### Steps:
+* Step 1: Target the BookingID and BookingSlot columns from the Bookings table. 
+* Step 2: Extract the hour from the BookingSlot column and count the bookings in each hour.
+* Step 3: Group and order the data by hour. 
+
+![datetime 1](https://user-images.githubusercontent.com/106580846/215057763-28be6cf4-73e3-466e-b5d4-1e930ccc2920.png)
+
+#### Task 2:
+Little Lemon needs to display the following information for their staff:
+*	Each guest’s table number
+*	Each guest’s full name
+*	The expected arrival time in hours and minutes of each guest (e.g., 15 hours and 0 mins).
+ 
+###### Steps:
+*	Target TableNo, GuestFirstName, GuestLastName and BookingSlot columns in the Bookings table. 
+*	Order the data by BookingSlot. 
+*	Use Python’s datetime module to extract hours and minutes using the strptime function when printing the record. 
+
+![datetime 2](https://user-images.githubusercontent.com/106580846/215058020-b999956f-fb10-4e12-8b96-2b44d32d01af.png)
+
+#### Task 3:
+A guest with booking ID 2 and table number 12 wants to change their arrival time by one hour from 7pm to 8pm.
+
+###### Steps:
+*	Target BookingID, TableNo and BookingSlot columns in the Bookings table. 
+*	Add one hour in the BookingSlot. 
+*	Use the WHERE clause on TableNo and BookingID columns. 
+
+![datetime 3](https://user-images.githubusercontent.com/106580846/215058220-3bfa6777-d103-442c-9910-6255ff984229.png)
 
 
 
